@@ -1,0 +1,10 @@
+{
+  "cryptographic_primitive": "VSha-3946",
+  "classification": "Post-Quantum Coherent Hashing",
+  "operational_temperature_k": 298.15,
+  "topological_protection": "Functorial_Shielding",
+  "integration_layer": "AegisNet v8.0.1 ImmuneOS",
+  "verification_anchor": "Genesis Block 0",
+  "architects": ["bis3946", "oovelma"],
+  "status": "LOCKED_AND_ACTIVE"
+}
