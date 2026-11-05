@@ -6,7 +6,6 @@ Serves WORM state-chain (ledger.jsonl) to the network.
 from flask import Flask, jsonify
 import json
 from pathlib import Path
-import os
 
 app = Flask(__name__)
 LEDGER_FILE = Path("ledger.jsonl")
@@ -40,6 +39,5 @@ def get_chain():
     return jsonify({"chain": chain_data, "length": len(chain_data)})
 
 if __name__ == '__main__':
-    # Pokrećemo P2P server na svim sučeljima port 5000
     print("[NuN-NODE] Initiating Flask P2P wrapper on 0.0.0.0:5000")
     app.run(host='0.0.0.0', port=5000)
